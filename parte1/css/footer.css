@@ -1,0 +1,171 @@
+footer {
+  width: 100%;
+}
+
+.footer__infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__infos-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.logos__container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+
+.logos__background {
+  width: 35px;
+  height: 35px;
+  background-color: #7f7f7f;
+  position: relative;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.logos__background:hover {
+  background-color: #ffa200;
+}
+
+.logos__background img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logos__endereco p {
+  margin: 10px 0;
+  color: #7f7f7f;
+}
+
+.footer__petstore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__petstore span {
+  font-weight: 600;
+  color: #8158c5;
+}
+
+.footer__petstore a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #7f7f7f;
+}
+
+.footer__petstore a:hover {
+  text-decoration: underline;
+}
+
+.footer__contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.footer__contato span:first-child {
+  font-weight: 600;
+  color: #8158c5;
+}
+.footer__contato {
+  font-weight: 500;
+  color: #7f7f7f;
+}
+
+.footer__pagamento-container {
+  text-align: center;
+}
+
+.footer__pagamento-container span {
+  font-weight: 600;
+  color: #8158c5;
+}
+
+.pagamento__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0 0 0;
+}
+
+.pagamento__logos div {
+  flex-basis: 25%;
+}
+
+.pagamento__logos img {
+  margin: 0 auto;
+}
+
+.footer__serie {
+  margin: 25px 0 0 0;
+
+  padding: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #7f7f7f;
+  border-top: 1px solid #f0f0f0;
+  gap: 15px;
+}
+
+@media screen and (min-width: 540px) {
+  .logos__container {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__serie {
+    flex-direction: row;
+    gap: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .footer__infos {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  .footer__petstore {
+    align-items: flex-start;
+  }
+
+  .footer__contato {
+    align-items: flex-start;
+  }
+
+  .footer__pagamento-container {
+    text-align: start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 15%;
+  }
+
+  .pagamento__logos {
+    justify-content: flex-start;
+  }
+
+  .pagamento__logos div {
+    flex-basis: auto;
+  }
+}
