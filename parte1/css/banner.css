@@ -2,10 +2,6 @@
   width: 100%;
 }
 
-/* .banner__image {
-  width: 100%;
-} */
-
 .banner__image__control {
   background-image: url("../assets/banner.png");
   background-position: center;
