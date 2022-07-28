@@ -7,11 +7,21 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/banner.css" />
-    <script src="js/script.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/novidades.css" />
+    <link rel="stylesheet" href="css/destaques.css" />
+    <script src="js/script.js" type="module"></script>
   </head>
 
   <body>
@@ -29,6 +39,7 @@
         </div>
       </div>
     </header>
+
     <section class="menu">
       <nav class="menu__nav">
         <img src="./assets/menu.png" class="menu__mobile" />
@@ -43,6 +54,7 @@
         </ul>
       </nav>
     </section>
+
     <section class="banner">
       <div class="banner__image__control">
         <img src="./assets/chevron-left.png" alt="chevron left" />
@@ -54,6 +66,45 @@
           <li class="button__brinquedos">BRINQUEDOS</li>
           <li class="button__acessorios">ACESSÓRIOS</li>
         </ul>
+      </div>
+    </section>
+
+    <section class="vitrine__novidades">
+      <div class="vitrine__novidades__limiter">
+        <h2>NOVIDADES</h2>
+        <ul class="vitrine__novidades__lista">
+          <!-- <li class="vitrine__produto">
+            <a href="#">
+              <div class="vitrine__link">
+                <h3 class="vitrine__produto-comprar">COMPRA RÁPIDA</h3>
+                <span class="vitrine__produto-desconto">50% OFF</span>
+                <img src="./assets/vitrine1.jpeg" alt="" />
+              </div>
+            </a>
+            <h4>Lorem ipsum dolor summit</h4>
+            <span class="vitrine__produto__preco">R$ 99,99</span>
+            <span>99x de R$ 99,99</span>
+          </li> -->
+        </ul>
+        <div class="banner__animais">
+          <a href="#">
+            <div class="banner__animais__gato">
+              <span>PARA GATOS</span>
+            </div>
+          </a>
+          <a href="#">
+            <div class="banner__animais__cachorro">
+              <span>PARA CACHORROS</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="vitrine__destaques">
+      <div class="vitrine__destaques__limiter">
+        <h2>DESTAQUES</h2>
+        <ul class="vitrine__destaques__lista"></ul>
       </div>
     </section>
   </body>

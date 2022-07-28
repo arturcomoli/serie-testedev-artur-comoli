@@ -1,0 +1,222 @@
+.vitrine__novidades {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.vitrine__novidades__limiter {
+  width: 100%;
+  max-width: 1360px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.vitrine__novidades__limiter h2 {
+  font-weight: 600;
+  color: #7f7f7f;
+}
+
+.vitrine__novidades__lista {
+  margin: 15px auto;
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  gap: 0 20px;
+  position: relative;
+  scroll-snap-type: mandatory x;
+}
+
+.vitrine__novidades__lista::-webkit-scrollbar-track {
+  background-color: #f7f7f7;
+}
+
+.vitrine__novidades__lista::-webkit-scrollbar {
+  height: 5px;
+  background: #f7f7f7;
+}
+
+.vitrine__novidades__lista::-webkit-scrollbar-thumb {
+  background: #7f7f7f;
+}
+
+.vitrine__produto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #7f7f7f;
+  margin: 0 0 0 15px;
+  border: 2px solid #f7f7f7;
+  transition: all 1s ease;
+  scroll-snap-align: start;
+  width: fit-content;
+  height: fit-content;
+  max-width: 300px;
+}
+
+.vitrine__produto:hover {
+  border-color: #7f7f7f;
+}
+
+.vitrine__produto a:hover .vitrine__produto-comprar {
+  opacity: 1;
+  height: auto;
+}
+
+.vitrine__produto a {
+  text-decoration: none;
+}
+
+.vitrine__produto h4 {
+  margin: 15px 0;
+}
+
+.vitrine__link {
+  position: relative;
+  z-index: 1;
+}
+
+.vitrine__link::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  background-color: #8158c5;
+  transition: all 1s ease;
+}
+
+.vitrine__link:hover::before {
+  opacity: 0.3;
+}
+
+.vitrine__produto-comprar {
+  background-color: #ffa200;
+  color: #fff;
+  padding: 15px 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  z-index: 10;
+  transition: all 1s ease;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.vitrine__produto-desconto {
+  background-color: #8158c5;
+  color: #fff;
+  text-decoration: none;
+  width: fit-content;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+}
+
+.vitrine__produto__preco {
+  font-weight: 600;
+}
+
+.banner__animais {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__animais a {
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.banner__animais a::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0.2;
+  background-color: #000;
+  transition: all 1s ease;
+}
+
+.banner__animais a:hover::after {
+  opacity: 0.5;
+}
+
+.banner__animais div {
+  height: 200px;
+}
+
+.banner__animais span {
+  background-color: #ffa200;
+  padding: 5px;
+  position: absolute;
+  z-index: 2;
+}
+
+.banner__animais__gato {
+  background-image: url("../assets/gato.webp");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.banner__animais__gato span {
+  bottom: 15px;
+  right: 0;
+}
+
+.banner__animais__cachorro {
+  background-image: url("../assets/dog.jpg");
+  background-position: center;
+  background-size: cover;
+  /* height: 200px; */
+  position: relative;
+}
+
+.banner__animais__cachorro span {
+  bottom: 15px;
+  right: 0;
+}
+
+@media screen and (min-width: 540px) {
+  .banner__animais div {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner__animais {
+    flex-direction: row;
+    gap: 0 15px;
+  }
+
+  .banner__animais div {
+    height: 300px;
+  }
+
+  .banner__animais__cachorro span {
+    left: 0;
+    width: fit-content;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner__animais div {
+    height: 350px;
+  }
+}

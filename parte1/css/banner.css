@@ -53,6 +53,7 @@
   position: relative;
   z-index: 2;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .button__racoes {
