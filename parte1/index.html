@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/novidades.css" />
     <link rel="stylesheet" href="css/destaques.css" />
+    <link rel="stylesheet" href="css/newsletter.css" />
     <script src="js/script.js" type="module"></script>
   </head>
 
@@ -105,6 +106,37 @@
       <div class="vitrine__destaques__limiter">
         <h2>DESTAQUES</h2>
         <ul class="vitrine__destaques__lista"></ul>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div class="newsletter__limiter">
+        <div class="newsletter__header">
+          <div class="newsletter__header__card">
+            <img src="./assets/logo_newsletter.png" alt="newsletter logo" />
+            <p><span>ENTREGA GRATUITA</span> A PARTIR DE R$ 99</p>
+          </div>
+          <div class="newsletter__header__card">
+            <img src="./assets/logo_newsletter.png" alt="newsletter logo" />
+            <p><span>PARCELAMENTO</span> SEM JUROS</p>
+          </div>
+          <div class="newsletter__header__card">
+            <img src="./assets/logo_newsletter.png" alt="newsletter logo" />
+            <p><span>CADASTRE-SE</span> E GANHE DESCONTO</p>
+          </div>
+        </div>
+        <div class="newsletter__infos">
+          <h2>ASSINE NOSSA NEWSLETTER</h2>
+          <span
+            >Cadastre-se para receber nossas novidades e descontos
+            exclusivos</span
+          >
+          <form class="newsletter__form" onsubmit="">
+            <input type="text" placeholder="Nome" />
+            <input type="email" placeholder="E-mail" />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
       </div>
     </section>
   </body>

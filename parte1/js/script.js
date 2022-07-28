@@ -25,14 +25,12 @@ class GenerateList {
         : `<span style="color: transparent">a</span>`
     }`;
 
-    console.log(li);
     return li;
   }
 
   static novidadesList() {
     db.map(({ img, titulo, preco, status, parcela }) => {
       const produto = GenerateList.card(img, titulo, preco, status, parcela);
-      console.log(produto);
       return GenerateList.ulNovidades.appendChild(produto);
     });
   }
@@ -40,7 +38,6 @@ class GenerateList {
   static destaquesList() {
     db.map(({ img, titulo, preco, status, parcela }) => {
       const produto = GenerateList.card(img, titulo, preco, status, parcela);
-      console.log(produto);
       return GenerateList.ulDestaques.appendChild(produto);
     });
   }
