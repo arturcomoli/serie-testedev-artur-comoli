@@ -1,18 +1,60 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Pet Store</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <script src="js/script.js" type="text/javascript"></script>
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Pet Store</title>
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="shortcut icon" href="">
-	<link rel="stylesheet" href="css/styles.css">
-	<script src="js/script.js" type="text/javascript"></script>
-</head>
-
-<body>
-
-
-
+  <body>
+    <header class="header">
+      <div class="header__search">
+        <input type="text" placeholder="Pesquisar..." />
+        <img src="./assets/lupa.png" />
+      </div>
+      <img src="./assets/logo.png" alt="logo" />
+      <div class="header__usercontent">
+        <img src="./assets/user.png" class="header__content__img" />
+        <div class="header__usercontent__cart">
+          <img src="./assets/cart.png" />
+          <span>99</span>
+        </div>
+      </div>
+    </header>
+    <section class="menu">
+      <nav class="menu__nav">
+        <img src="./assets/menu.png" class="menu__mobile" />
+        <ul class="menu__list">
+          <li>Categoria lorem</li>
+          <li>Categoria Categoria</li>
+          <li>Categoria lorem ipsum</li>
+          <li>Categoria lorem</li>
+          <li>Categoria</li>
+          <li>Categoria lorem ipsum</li>
+          <li>Categoria ipsum</li>
+        </ul>
+      </nav>
+    </section>
+    <section class="banner">
+      <div class="banner__image__control">
+        <img src="./assets/chevron-left.png" alt="chevron left" />
+        <img src="./assets//chevron-right.png" alt="chevron right" />
+      </div>
+      <div class="banner__menu">
+        <ul class="banner__menu__buttons">
+          <li class="button__racoes">RAÇÕES</li>
+          <li class="button__brinquedos">BRINQUEDOS</li>
+          <li class="button__acessorios">ACESSÓRIOS</li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>
